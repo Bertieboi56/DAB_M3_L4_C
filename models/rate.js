@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Rate = sequelize.define('Rate', {
+    const Rate = sequelize.define('rate', {
         Value: {
             type: Sequelize.DataTypes.INTEGER,
             validate: {

@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Room = sequelize.define('Room', {
+    const Room = sequelize.define('room', {
         PricePerDay: Sequelize.DataTypes.DECIMAL(10,2),
         Capacity: Sequelize.DataTypes.INTEGER,
     },{

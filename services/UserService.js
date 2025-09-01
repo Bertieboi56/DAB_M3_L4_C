@@ -2,10 +2,10 @@ const { Op } = require("sequelize");
 class UserService {
     constructor(db) {
         this.client = db.sequelize;
-        this.User = db.User;
-        this.Room = db.Room;
-        this.Hotel = db.Hotel;
-        this.Reservation = db.Reservation;
+        this.User = db.user;
+        this.Room = db.room;
+        this.Hotel = db.hotel;
+        this.Reservation = db.reservation;
     }
 
     async create(firstName, lastName, username, salt, encryptedPassword) {
